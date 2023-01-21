@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Countries(country_id INT NOT NULL UNIQUE PRIMARY KEY,country_name VARCHAR(50) NOT NULL);
+CREATE TABLE IF NOT EXISTS Countries_New 
+as SELECT * FROM Countries;
+SHOW COLUMNS FROM Countries_New;
+SELECT * FROM Countries_New
